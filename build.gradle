@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'Hw-16'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("ch.qos.logback:logback-classic:1.4.11")
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
